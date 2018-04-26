@@ -22,15 +22,15 @@ def menu2():
     elif ch == 2:
         clear_screen()
         print("show_history()")
-        ls = show_history.show_history(lls)
+        show_history.show_history(lls)
     elif ch == 3:
         clear_screen()
         print("#deposit()")
-        ls = deposit.deposit(lls)
+        deposit.deposit(lls)
     elif ch == 4:
         clear_screen()
         print("#withdraw()")
-        ls = withdraw.withdraw(lls)
+        withdraw.withdraw(lls)
     elif ch == 5:
         clear_screen()
         print("#change_pasword()")

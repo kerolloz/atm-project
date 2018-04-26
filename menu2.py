@@ -1,12 +1,15 @@
+import os
+
 import withdraw
-import read_accounts
 import deposit
+import show_history
 
 lls = [1, 1, 1, 1500]
 
 
 def menu2():
-    print("Welcome ")
+    os.system('clear')
+    print("\nWelcome ")
     ch = input("\n1) show balance \n2) show history\n3) deposit\n4) withdraw\n"
                "5) change password \n6) logout\n\nchoice>> ")
 
@@ -16,6 +19,7 @@ def menu2():
     elif ch == 2:
         # show_history()
         print("show_history()")
+        ls = show_history.show_history(lls)
     elif ch == 3:
         # deposit()
         print("#deposit()")

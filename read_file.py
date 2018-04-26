@@ -1,15 +1,15 @@
-"""this function returns a list of lists of accounts in the file"""
+"""returns a list of lines in the file"""
 
 
-def read_accounts():
-    accounts_file = open('Accounts.txt', 'r')
-    accounts_list = []
-    for line in accounts_file:
+def read_file(file_name):
+    opened_file = open(file_name, 'r')
+    lines_list = []
+    for line in opened_file:
         line = line.split()
-        accounts_list.append(line)
+        lines_list.append(line)
 
-    for account in accounts_list:
-        print(account)
+    '''for account in accounts_list:
+        print(account)'''
 
-    return accounts_list
+    return lines_list
 

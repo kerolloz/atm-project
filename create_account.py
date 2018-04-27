@@ -30,4 +30,3 @@ def create_account(ls):
         id_file.close()
     accounts_file.close()
     ls.append([str(new_last_id), account_name, account_password, '0'])
-

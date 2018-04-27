@@ -1,4 +1,6 @@
-import menu2
+import menu1
 
-menu2.menu2()
+# create Accounts.txt if not exist
+# read the dir files in a list, search for 'Accounts.txt', if not found, create it
 
+menu1.menu1()

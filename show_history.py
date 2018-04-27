@@ -1,4 +1,5 @@
 import read_file
+
 """show_history function: shows the process made to a certain account"""
 
 
@@ -9,12 +10,11 @@ def show_history(ls):
     # ls[2] password
     # ls[3] balance
 
-    choice = input('1) show deposit processes\n2) show withdraw processes\n3) show '
-                   'change password process\n4) show all processes\n'
-                   '5) clear processes\n\nchoice>> ')
+    choice = int(input('1) show deposit processes\n2) show withdraw processes\n3) show '
+                       'change password process\n4) show all processes\n'
+                       '5) clear processes\n\nchoice>> '))
 
-
-    file_name = str(ls[0]) + '.txt'
+    file_name = ls[0] + '.txt'
     id_list = read_file.read_file(file_name)
     # id_list[line][0]    process_id
     # id_list[line][1]    process_type
@@ -40,3 +40,6 @@ def show_history(ls):
     elif choice == 5:
         new_file = open(file_name, 'w')
         new_file.close()
+    else:
+        print('ERROR: Wrong choice')
+

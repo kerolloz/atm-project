@@ -9,7 +9,7 @@ def create_account(ls):
     account_name = input('Pleas Enter Your Account Name (WITHOUT SPACES) : ')
     os.system('clear')
     account_password = input('Pleas Enter Your Account Password (WITHOUT SPACES) : ')
-    os.system('clear')
+    # os.system('clear')
     print("Creating Your Account .....")
     accounts_file = open('Accounts.txt', 'a')
 
@@ -18,7 +18,7 @@ def create_account(ls):
     else:
         new_last_id = int(ls[len(ls) - 1][0]) + 1
 
-    line = '{}\t{}\t{}\t0\n'.format(str(new_last_id), account_name, account_password)
+    line = '{0}\t{1}\t{2}\t0\n'.format(str(new_last_id), account_name, account_password)
     try:
         accounts_file.write(line)
         id_file_name = str(new_last_id) + '.txt'

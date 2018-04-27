@@ -7,8 +7,7 @@ accounts_list = read_file('Accounts.txt')
 
 
 def menu1():
-    os.system('clear')
-    print('>>>>>>>>WELCOME<<<<<<<<')
+    print('>>>>>>>>WELCOME<<<<<<<<\n')
     choice = int(input('1) Login\n2) Create Account\n3) Exit\n\nchoice>> '))
     if choice == 1:
         login(accounts_list)
@@ -19,5 +18,9 @@ def menu1():
     else:
         print("ERROR: Wrong choice\n")
         menu1()
+    # os.system('clear')
+    menu1()
 
+
+if __name__ == '__main__':
     menu1()

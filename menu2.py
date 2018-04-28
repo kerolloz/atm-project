@@ -2,7 +2,7 @@ import os
 import withdraw
 import deposit
 import show_history
-
+import change_password
 
 def clear_screen():  # function to clear the output of the screen
     os.system('clear')
@@ -36,6 +36,7 @@ def menu2(account):
     elif ch == 5:
         clear_screen()
         print("#change_pasword()")
+        change_password.change_password(account)
     elif ch == 6:
         clear_screen()
         return account

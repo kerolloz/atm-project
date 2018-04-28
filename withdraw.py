@@ -29,7 +29,7 @@ def withdraw(ls):
     else:
         last_id = int(process_list[len(process_list)-1][0]) + 1  # get last id and increment it
 
-    id_file.write('{0}\twithdraw\t{1}\t{2}\t{3}\n'.format(str(last_id), str(time.ctime()), ls[3], str(current_balance)))
+    id_file.write('{0}\twithdraw\t\t\t{1}\t{2}\t{3}\n'.format(str(last_id), str(time.ctime()), ls[3], str(current_balance)))
     # write process id type before after
     id_file.close()
     ls[3] = str(current_balance)

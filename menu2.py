@@ -43,6 +43,5 @@ def menu2(account):
     else:
         clear_screen()
         print("ERROR: Wrong choice\n")
-        menu2(account)
 
     menu2(account)

@@ -5,19 +5,23 @@ def login(acc_list):
 
     login_id = input('Please, Enter your info\n>>ID: ')
     login_password = input('>>Password: ')
-    found = False
+    found = True
     for account in acc_list:
         if account[0] == login_id and account[2] == login_password:
-            menu2(account)
-            found = True
+            found = False
             break
+        else:
+            continue
 
-    if not found:
+    if found:
         clear_screen()
         print('Wrong ID or Password')
         login(acc_list)
 
     else:
+        print("*** Name and Password are correct <3 *** \n")
+        menu2(account)
+
         acc_file = open('Accounts.txt', 'w')
         print('Saving changes...')
 

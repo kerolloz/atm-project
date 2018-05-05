@@ -18,9 +18,9 @@ def menu1():
     elif choice == 3:
         exit(0)  # we didn't save changes here
     else:
+        os.system('clear')
         print("ERROR: Wrong choice\n")
-        menu1()
-    # os.system('clear')
+    
     menu1()
 
 

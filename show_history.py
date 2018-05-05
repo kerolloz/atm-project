@@ -42,4 +42,3 @@ def show_history(ls):
         new_file.close()
     else:
         print('ERROR: Wrong choice')
-

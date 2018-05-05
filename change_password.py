@@ -26,7 +26,6 @@ def gate_x(t_password):
 def change_password(ls):
     # Get the old password
     old_password = ls[2]
-    '''curry the old password'''
 
     # Ask to old password to enter new one
     flag = gate_x(old_password)
@@ -53,5 +52,4 @@ def change_password(ls):
 
         # Write the new password
     elif flag == '1':
-        '''Wrong massage'''
         input("Out of range of try ... press Enter")

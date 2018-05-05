@@ -28,7 +28,7 @@ def deposit(ls):
         last_id = int(process_list[len(process_list) - 1][0]) + 1  # get last id and increment it
 
     id_file.write('{0}\tdeposit\t\t\t\t{1}\t{2}\t{3}\n'.format(str(last_id), str(time.ctime()), ls[3], str(current_balance)))
-    # write process id type before after
+    # write->   process_id    process_name    process_date_and_time    before_process    after_process
     id_file.close()
     ls[3] = str(current_balance)
     print('Your current balance: ' + ls[3])

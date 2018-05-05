@@ -1,4 +1,4 @@
-"""returns a list of lines in the file"""
+"""returns a list of lists lines in the file - each line in a list all stored in one list"""
 
 
 def read_file(file_name):
@@ -8,8 +8,4 @@ def read_file(file_name):
         line = line.split()
         lines_list.append(line)
 
-    '''for account in accounts_list:
-        print(account)'''
-
     return lines_list
-

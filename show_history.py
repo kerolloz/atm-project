@@ -1,6 +1,6 @@
 import read_file
 
-"""show_history function: shows the process made to a certain account"""
+"""show_history function: shows the processes made to a certain account"""
 
 
 def show_history(ls):
@@ -14,8 +14,9 @@ def show_history(ls):
                        'change password process\n4) show all processes\n'
                        '5) clear processes\n\nchoice>> '))
 
-    file_name = ls[0] + '.txt'
+    file_name = ls[0] + '.txt'   
     id_list = read_file.read_file(file_name)
+
     # id_list[line][0]    process_id
     # id_list[line][1]    process_type
     # id_list[line][2:6]  process_date

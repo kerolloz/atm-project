@@ -1,26 +1,23 @@
 import time
-
 from read_file import read_file
 
 
-def GateX(TPassword):
-    '''The true password'''
+def gate_x(t_password):
     # Enter old password to confirm the new password
-    Wrongfag = True  # '''True if end all tries wrong'''
-    Epassword = '' '''Curry try password'''
+    wrong_flag = True  # True if end all tries wrong
 
     print("\nIf you want go back type \"Exit\"\n")
-    for i in range(3):  # '''Limit the try to enter the password'''
-        Epassword = input('\nEnter The Old Password : ')
-        if (Epassword == "Exit"):  # '''Return the Exit flag'''
+    for i in range(3):  # Limit the try to enter the password
+        entered_password = input('\nEnter The Old Password : ')
+        if entered_password == "Exit":  # Return the Exit flag
             return '-1'
-        if (Epassword == TPassword):  # '''Compere if the Entred password = the True password'''
-            Wrongfag = False  # '''Set to false mean the entered password confirmed'''
+        if entered_password == t_password:  # Compere if the Entered password = the True password
+            wrong_flag = False  # Set to false mean the entered password confirmed
             break
 
-    if (Wrongfag):  # '''Return the wrong flag'''
+    if wrong_flag:  # Return the wrong flag
         return '1'
-    else:  # '''Return the true flage'''
+    else:  # Return the true flag
         return '0'
 
     # Change password
@@ -32,10 +29,10 @@ def change_password(ls):
     '''curry the old password'''
 
     # Ask to old password to enter new one
-    fag = GateX(old_password)
-    '''Security flag get the output flage'''
-    if fag == '0':
-        new_password = input("\nEntre the new password: ")
+    flag = gate_x(old_password)
+    # Security flag get the output flag
+    if flag == '0':
+        new_password = input("\nEnter the new password: ")
         '''Get the new password'''
         file_name = ls[0] + '.txt'
         process_list = read_file(file_name)
@@ -55,6 +52,6 @@ def change_password(ls):
         ls[2] = new_password
 
         # Write the new password
-    elif fag == '1':
+    elif flag == '1':
         '''Wrong massage'''
         input("Out of range of try ... press Enter")

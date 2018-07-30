@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: File Processing Project
 description: ATM Account Management Project
-zip_url: https://github.com/kerolloz/file_project/zipball/master
-tar_url: https://github.com/kerolloz/file_project/tarball/master
+github:
+  zip_url: https://github.com/kerolloz/file_project/zipball/master
+  tar_url: https://github.com/kerolloz/file_project/tarball/master

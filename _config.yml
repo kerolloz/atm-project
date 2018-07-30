@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: ATM (File Processing Project)
-description: ATM Accounts Management
+title: File Processing Project
+description: ATM Account Management Project
 github:
   zip_url: http://example.com/download.zip
   another_url: another value

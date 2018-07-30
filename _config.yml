@@ -1,7 +1,4 @@
 theme: jekyll-theme-slate
 title: File Processing Project
 description: ATM Account Management Project
-github:
-  zip_url: https://github.com/kerolloz/file_project/zipball/master
-  tar_url: https://github.com/kerolloz/file_project/tarball/master
 show_downloads: true
